@@ -1,49 +1,156 @@
 Q1. How do you load a CSV file into a Pandas DataFrame?
 
+Ans. To insert csv file in Pandas DataFrame, first we need to create a variable_name where we want to store our csv file and then we write the command of 
+     pd.read_csv('file_path name').
+     for ex:
+     xyz = pd.read_csv('file/path/name')
+
+=================================================================================================================================================================
 Q2. How do you check the data type of a column in a Pandas DataFrame?
 
+Ans. To check the data type in pandas DataFrame we can use the “dtype” attribute. The attribute returns a series with the data type of each column.
+
+=================================================================================================================================================================
 Q3. How do you select rows from a Pandas DataFrame based on a condition?
+
+Ans. You can select the Rows from Pandas DataFrame based on column values or based on multiple conditions either using DataFrame.loc[] attribute, DataFrame.query()
+      or DataFrame.apply() method to use lambda function
+      
+=================================================================================================================================================================
 
 Q4. How do you rename columns in a Pandas DataFrame?
 
+Ans. select the column that you wanted to rename, and write the variable_name with .rename, and in open parentesis () mention the 'column_old_name': 'ciolumn_new_name'
+     and inplace = true.
+     rankings_pd.rename(columns = {'test':'TEST'}, inplace = True)
+
+=================================================================================================================================================================
+
 Q5. How do you drop columns in a Pandas DataFrame?
+
+Ans. Write the variable name and mention .drop('column_name', axis=1)
+     for ex: xyz is variable name.
+           xyz.drop('column_name', axis=1)
+
+=================================================================================================================================================================
 
 Q6. How do you find the unique values in a column of a Pandas DataFrame?
 
+Ans. pandas.DataFrame().unique() method is used when we deal with a single column of a DataFrame and returns all unique elements of a column.
+
+=================================================================================================================================================================
+
 Q7. How do you find the number of missing values in each column of a Pandas DataFrame?
+
+Ans. we can simply write the dataFrame name and along with that we use ISNULL with open parenthesis.
+      xyz.isnull()
+
+=================================================================================================================================================================
 
 Q8. How do you fill missing values in a Pandas DataFrame with a specific value?
 
+Ans. To find missing values in a Pandas DataFrame, you can use the isnull() method, which returns a DataFrame of the same shape as the original with True where
+     there are missing values and False otherwise
+
+=================================================================================================================================================================
+
 Q9. How do you concatenate two Pandas DataFrames?
+
+Ans. You can add two Pandas DataFrames using the add() method. The add() method aligns the columns of two DataFrames and adds the corresponding values.
+      for ex: s1 = {'A': [1,2,3,4], 'B':[3,4,5,6]}
+              s2 = {'C': [4,5,6,7], 'D':[6,7,8,5]}
+              
+              sum = s1.add(s2)
+              print(sum)
+
+=================================================================================================================================================================
 
 Q10. How do you merge two Pandas DataFrames on a specific column?
 
+Ans. to merge the two different data frames, we need to write .merge()
+      for ex: merge = s1.merge(s2)
+              print(merge)
+
+=================================================================================================================================================================
+
 Q11. How do you group data in a Pandas DataFrame by a specific column and apply an aggregation function?
 
+Ans. To group data in a Pandas DataFrame by a specific column and apply an aggregation function, you can use the groupby() method followed by the aggregation
+     function. The groupby() method groups the data in the DataFrame based on the values in one or more columns, and returns a GroupBy object. You can then apply
+     an aggregation function (such as sum(), mean(), count(), etc.) to the GroupBy object to compute a summary statistic for each group.
+
+=================================================================================================================================================================
 Q12. How do you pivot a Pandas DataFrame?
+Ans. 
+
+=================================================================================================================================================================
 
 Q13. How do you change the data type of a column in a Pandas DataFrame?
 
+Ans. To change the data type of a column in a Pandas DataFrame, you can use the astype() method. The astype() method allows you to cast the data in a column to a
+     specific data type.
+
+=================================================================================================================================================================
+
 Q14. How do you sort a Pandas DataFrame by a specific column?
+
+Ans. simply write dataframe_name.sort_values(by='column_name')
+     ex: xyz.sort_values(by='column_name')
+
+=================================================================================================================================================================
 
 Q15. How do you create a copy of a Pandas DataFrame?
 
+Ans. 
+
+=================================================================================================================================================================
+
 Q16. How do you filter rows of a Pandas DataFrame by multiple conditions?
+Ans. 
+
+=================================================================================================================================================================
 
 Q17. How do you calculate the mean of a column in a Pandas DataFrame?
+Ans. 
+
+=================================================================================================================================================================
 
 Q18. How do you calculate the standard deviation of a column in a Pandas DataFrame?
+Ans. 
+
+=================================================================================================================================================================
 
 Q19. How do you calculate the correlation between two columns in a Pandas DataFrame?
+Ans. 
+
+=================================================================================================================================================================
 
 Q20. How do you select specific columns in a DataFrame using their labels?
+Ans. 
+
+=================================================================================================================================================================
 
 Q21. How do you select specific rows in a DataFrame using their indexes?
+Ans. 
+
+=================================================================================================================================================================
 
 Q22. How do you sort a DataFrame by a specific column?
+Ans. 
+
+=================================================================================================================================================================
 
 Q23. How do you create a new column in a DataFrame based on the values of another column?
+Ans. 
+
+=================================================================================================================================================================
 
 Q24. How do you remove duplicates from a DataFrame?
+Ans. 
+
+=================================================================================================================================================================
 
 Q25. What is the difference between .loc and .iloc in Pandas?
+Ans. 
+
+=================================================================================================================================================================
