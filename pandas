@@ -101,56 +101,73 @@ Ans. simply write dataframe_name.sort_values(by='column_name')
 
 Q15. How do you create a copy of a Pandas DataFrame?
 
-Ans. 
+Ans. The copy() method returns a copy of the DataFrame. By default, the copy is a "deep copy" meaning that any changes made in the original DataFrame will NOT be
+     reflected in the copy.
 
 =================================================================================================================================================================
 
 Q16. How do you filter rows of a Pandas DataFrame by multiple conditions?
-Ans. 
+
+Ans. Pandas dataframes allow for boolean indexing which is quite an efficient way to filter a dataframe for multiple conditions. In boolean indexing, boolean
+     vectors generated based on the conditions are used to filter the data. Multiple conditions involving the operators | (for or operation), & (for and operation),
+     and ~ (for not operation) can be grouped using parenthesis ().
 
 =================================================================================================================================================================
 
 Q17. How do you calculate the mean of a column in a Pandas DataFrame?
-Ans. 
+
+Ans. To calculate the mean of whole columns in the DataFrame, use pandas.Series.mean() with a list of DataFrame columns. You can also get the mean for all numeric
+     columns using DataFrame.mean(), use axis=0 argument to calculate the column-wise mean of the DataFrame.
 
 =================================================================================================================================================================
 
 Q18. How do you calculate the standard deviation of a column in a Pandas DataFrame?
-Ans. 
+
+Ans. To calculate the standard deviation of a column in a Pandas DataFrame, you can use the std() method provided by Pandas.
 
 =================================================================================================================================================================
 
 Q19. How do you calculate the correlation between two columns in a Pandas DataFrame?
-Ans. 
+
+Ans. To calculate the correlation between two columns in a Pandas DataFrame, you can use the corr() method provided by Pandas.
 
 =================================================================================================================================================================
 
 Q20. How do you select specific columns in a DataFrame using their labels?
-Ans. 
+
+Ans. To select specific columns in a Pandas DataFrame using their labels, you can use the indexing operator [] with the column labels.
 
 =================================================================================================================================================================
 
 Q21. How do you select specific rows in a DataFrame using their indexes?
-Ans. 
+
+Ans. To select specific rows in a Pandas DataFrame using their indexes, you can use the loc[] or iloc[] indexer.
 
 =================================================================================================================================================================
 
 Q22. How do you sort a DataFrame by a specific column?
-Ans. 
+
+Ans. To sort a DataFrame by a specific column, you can use the sort_values() method provided by Pandas. 
 
 =================================================================================================================================================================
 
 Q23. How do you create a new column in a DataFrame based on the values of another column?
-Ans. 
+
+Ans. To create a new column in a Pandas DataFrame based on the values of another column, you can simply assign a new Series to the DataFrame with the desired
+     column name. 
 
 =================================================================================================================================================================
 
 Q24. How do you remove duplicates from a DataFrame?
-Ans. 
+
+Ans.  Pandas DataFrame, you can use the drop_duplicates() method. This method returns a DataFrame with duplicate rows removed.
 
 =================================================================================================================================================================
 
 Q25. What is the difference between .loc and .iloc in Pandas?
-Ans. 
+
+Ans. .loc is label-based indexing, which means it selects data based on the labels of rows or columns. It accepts label-based indexing using the actual row or column labels.
+     .iloc, on the other hand, is integer-based indexing, which means it selects data based on the integer positions of rows or columns. It accepts integer-based
+      indexing using the integer positions of rows or columns.
 
 =================================================================================================================================================================
